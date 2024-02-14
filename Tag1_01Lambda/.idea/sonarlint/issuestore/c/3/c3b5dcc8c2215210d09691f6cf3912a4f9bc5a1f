@@ -1,0 +1,10 @@
+
+‚
+java:S1488"`Immediately return this expression instead of assigning it to the temporary variable "consumer".(®ÉÚÚüÿÿÿÿ8É×¯ºÚ1
+s
+java:S4276"QRefactor this code to use the more specialised Functional Interface 'IntConsumer'(×È¯§şÿÿÿÿ8á—ºÚ1
+s
+java:S4276"QRefactor this code to use the more specialised Functional Interface 'IntConsumer'(®ÉÚÚüÿÿÿÿ8ÈòšºÚ1
+L	java:S106"+Replace this use of System.out by a logger.(®ÉÚÚüÿÿÿÿ8º‹ºÚ1
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÈòšºÚ1

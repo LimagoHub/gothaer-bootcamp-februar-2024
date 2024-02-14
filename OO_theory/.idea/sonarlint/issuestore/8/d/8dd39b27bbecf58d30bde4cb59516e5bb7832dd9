@@ -1,0 +1,12 @@
+
+U
+java:S1854"8Remove this useless assignment to local variable "babe".(¹½±¥8¢ËÇ·Ú1
+V
+java:S1854"9Remove this useless assignment to local variable "piggy".(–ãÎ˜8¢ËÇ·Ú1
+G	java:S106"+Replace this use of System.out by a logger.(ªžãŸ8£ËÇ·Ú1
+G
+java:S1481"*Remove this unused "piggy" local variable.(–ãÎ˜8¤ËÇ·Ú1
+G	java:S106"+Replace this use of System.out by a logger.(ªžãŸ8Á–È·Ú1
+F
+java:S1481")Remove this unused "babe" local variable.(¹½±¥8¤ËÇ·Ú1
+G	java:S106"+Replace this use of System.out by a logger.(ªžãŸ8¥±È·Ú1
