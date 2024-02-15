@@ -1,7 +1,28 @@
 
-G	java:S106"+Replace this use of System.out by a logger.(»Ùå±8…àú¼Ú1
-]	java:S125"<This block of commented-out lines of code should be removed.(ıĞôÍúÿÿÿÿ8†àú¼Ú1
+a
+java:S2095$"DUse try-with-resources or close this "Stream" in a "finally" clause.(ËÔá‹8üĞùÀÚ1
+^
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ªƒ®²8şĞùÀÚ1
+W	java:S125"<This block of commented-out lines of code should be removed.(íŞÆ8ÑùÀÚ1
+s
+java:S3457*"Q%n should be used in place of \n to produce the platform-specific line separator.(šß¢ ÿÿÿÿÿ8ƒÑùÀÚ1
+L	java:S106*"+Replace this use of System.out by a logger.(šß¢ ÿÿÿÿÿ8ƒÑùÀÚ1
+L	java:S106-"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ƒÑùÀÚ1
+Z
+java:S1128"8Remove this unused import 'java.net.URISyntaxException'.(Ä®íÿÿÿÿÿ8…ÑùÀÚ1
 M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8†àú¼Ú1
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8…ÑùÀÚ1
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8…ÑùÀÚ1
 Q
-java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8†àú¼Ú1
+java:S1128	"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8…ÑùÀÚ1
+Y
+java:S1128"7Remove this unused import 'java.util.stream.IntStream'.(ÙÉ½Ÿùÿÿÿÿ8…ÑùÀÚ1
+Q
+java:S1128"4Remove this unused import 'java.util.stream.Stream'.(ó÷”8…ÑùÀÚ1
+E
+java:S1068<"(Remove this unused "name" private field.(Ë¥¼8…ÑùÀÚ1
+M
+java:S1068="+Remove this unused "gewicht" private field.(ßï¬„ÿÿÿÿÿ8…ÑùÀÚ1
+N
+java:S11443",Remove this unused private "isPrime" method.(„ßŠÃùÿÿÿÿ8†ÑùÀÚ1
