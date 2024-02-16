@@ -1,6 +1,8 @@
 package de.gothaer.paintclone;
 
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
 public class PaintClone extends Frame {
@@ -36,6 +38,7 @@ public class PaintClone extends Frame {
         MyMenuBar menuBar = new MyMenuBar(this);
         setSize(SIZE,SIZE);
         setMenuBar(menuBar);
+        addMouseListener(new MyMouseListener());
     }
 
     @Override
@@ -45,5 +48,29 @@ public class PaintClone extends Frame {
 
     public static void main(String[] args) {
         new PaintClone().setVisible(true);
+    }
+
+    class MyMouseListener extends MouseAdapter {
+
+        private int x,  y;
+        @Override
+        public void mousePressed(final MouseEvent e) {
+            x = e.getX();
+            y = e.getY();
+        }
+
+        @Override
+        public void mouseReleased(final MouseEvent e) {
+            Graphics g = image.getGraphics();
+            g.setColor(getFarbe());
+            switch (getForm()) {
+                case LINIE -> g.drawLine(x,y,e.getX(),e.getY());
+                case RECHTECK -> g.drawRect(x,y,e.getX()-x,e.getY()-y);
+                case OVAL -> g.drawOval(x,y,e.getX()-x,e.getY()-y);
+                case LOESCHEN -> g.clearRect(x,y,e.getX()-x,e.getY()-y);
+            }
+            g.dispose();
+            repaint();
+        }
     }
 }

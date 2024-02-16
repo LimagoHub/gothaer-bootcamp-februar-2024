@@ -1,8 +1,7 @@
 package de.gothaer.paintclone;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 
 
 import static de.gothaer.paintclone.PaintClone.Form.*;
@@ -29,14 +28,17 @@ public class MyMenuBar extends MenuBar {
         menu.add(menuItem);
 
         menuItem = new MenuItem("Rechteck");
+        menuItem.addActionListener(e->paintClone.setForm(RECHTECK));
         menu.add(menuItem);
 
         menuItem = new MenuItem("Oval");
+        menuItem.addActionListener(e->paintClone.setForm(OVAL));
         menu.add(menuItem);
 
         menu.addSeparator();
 
         menuItem = new MenuItem("Löschen");
+        menuItem.addActionListener(e->paintClone.setForm(LOESCHEN));
         menu.add(menuItem);
 
 
@@ -49,20 +51,27 @@ public class MyMenuBar extends MenuBar {
         menu.add(menuItem);
 
         menuItem = new MenuItem("Weiss");
+        menuItem.addActionListener(e->paintClone.setFarbe(WHITE));
         menu.add(menuItem);
+
         menuItem = new MenuItem("Rot");
+        menuItem.addActionListener(e->paintClone.setFarbe(RED));
         menu.add(menuItem);
 
         menuItem = new MenuItem("Grün");
+        menuItem.addActionListener(e->paintClone.setFarbe(GREEN));
         menu.add(menuItem);
 
         menuItem = new MenuItem("Blau");
+        menuItem.addActionListener(e->paintClone.setFarbe(BLUE));
         menu.add(menuItem);
 
         menuItem = new MenuItem("Gelb");
+        menuItem.addActionListener(e->paintClone.setFarbe(YELLOW));
         menu.add(menuItem);
 
         menuItem = new MenuItem("Pink");
+        menuItem.addActionListener(e->paintClone.setFarbe(PINK));
         menu.add(menuItem);
 
         add(menu);
