@@ -1,19 +1,14 @@
 
-g	java:S112*"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÿÙÊÛ1
-L
-java:S2387"*"x" is the name of a field in "Component".(±šß¯ùÿÿÿÿ8äÁÎÛ1
-L
-java:S2387"*"y" is the name of a field in "Component".(±šß¯ùÿÿÿÿ8åÁÎÛ1
-A
-java:S1659"Declare "y" on a separate line.(±šß¯ùÿÿÿÿ8æÁÎÛ1
-I
-java:S1659"'Declare "yRichtung" on a separate line.(³˜ôúÿÿÿÿ8óĞÛ1
+g	java:S112'"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8•ßäÛ1
 L
 java:S1948
-"*Make "strategy" transient or serializable.(×¿¾ÿÿÿÿÿ8ŠÚÊÛ1
-]	java:S125""<This block of commented-out lines of code should be removed.(§÷¨Œúÿÿÿÿ8ÚÊÛ1
-]	java:S125%"<This block of commented-out lines of code should be removed.(‚“¥‡ûÿÿÿÿ8ÚÊÛ1
+"*Make "strategy" transient or serializable.(×¿¾ÿÿÿÿÿ8ßäÛ1
+C
+java:S1948"&Make "ball" transient or serializable.(Öœæ”8ßˆøÛ1
+]	java:S125"<This block of commented-out lines of code should be removed.(§÷¨Œúÿÿÿÿ8¢ßäÛ1
+]	java:S125""<This block of commented-out lines of code should be removed.(‚“¥‡ûÿÿÿÿ8£ßäÛ1
+]	java:S1259"<This block of commented-out lines of code should be removed.(¡¦•ùÿÿÿÿ8¦ßäÛ1
 Q
-java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8ÚÊÛ1
+java:S1128"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ8çˆøÛ1
 P
-java:S1128".Remove this unused import 'java.time.Instant'.(Â‚éñÿÿÿÿÿ8ÚÊÛ1
+java:S1128".Remove this unused import 'java.time.Instant'.(Â‚éñÿÿÿÿÿ8çˆøÛ1

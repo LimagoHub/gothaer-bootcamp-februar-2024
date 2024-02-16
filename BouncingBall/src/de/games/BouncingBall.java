@@ -9,15 +9,12 @@ public class BouncingBall extends Frame {
 
     private BufferStrategy strategy;
     private static final int SIZE =1000;
-    private int x,y;
-    private int xRichtung, yRichtung;
+    private Ball ball;
 
     private boolean gameover = false;
     public BouncingBall()  {
         super("Bouncing Ball");
-        x = y = SIZE/2;
-        xRichtung = 2;
-        yRichtung = 1;
+        ball = new Ball(SIZE/2,SIZE/2, 20,20);
         setSize(SIZE,SIZE);
         setVisible(true);
         createBufferStrategy(2);
@@ -44,20 +41,21 @@ public class BouncingBall extends Frame {
     }
 
     private void calculateScene() {
-        x += xRichtung;
-        y += yRichtung;
-        if( x < 0 || x > getWidth())
-            xRichtung *= -1;
+        ball.getRectangle().x += ball.getxRichtung();
+        ball.getRectangle().y += ball.getyRichtung();
+        if( ball.getRectangle().x < 0 || ball.getRectangle().x > getWidth())
+            ball.setxRichtung(ball.getxRichtung() * -1);
 
-        if( y < 0 || y > getHeight())
-            yRichtung *= -1;
+        if( ball.getRectangle().y < 0 || ball.getRectangle().y > getHeight())
+            ball.setyRichtung(ball.getyRichtung() * -1);
     }
 
     private void renderScene() {
         Graphics g = strategy.getDrawGraphics();
-        g.setColor(Color.RED);
+
         g.clearRect(0, 0, getWidth(), getHeight());
-        g.fillOval(x-10, y-10, 20, 20);
+        //g.setXORMode(Color.BLUE);
+        ball.render(g);
         g.dispose();
         strategy.show();
     }
